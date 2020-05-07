@@ -1,0 +1,423 @@
+/* 清除默认样式 */
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+
+/* header部分 */
+    header{
+        height: 100px;
+        border-bottom: 2px solid #ff6700;
+    }
+    nav{
+        width: 1226px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex:0 0 0;
+        position: relative;
+    }
+    .navbox1{
+        width: 110px;
+        height: 100px;
+    }
+    .navlogo{
+        width: 55px;
+        height: 55px;
+        background-color: #ff6700;
+        position: relative;
+        cursor: pointer;
+        top: 22.5px;
+    }
+    .navlogo::before{
+        content: "";
+        height: 55px;
+        width: 55px;
+        background: url(../img/head-mi-home.png) no-repeat 50% 50%;
+        position: absolute;
+        left: -55px;
+        top: 0;
+        transition: all .2s;
+    }
+    .navlogo::after{
+        content: "";
+        height: 55px;
+        width: 55px;
+        background: url(../img/head-mi-logo.png) no-repeat 50% 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all .2s;
+    }
+    .navlogo:hover::before{
+        transform: translate(55px, 0);
+    }
+    .navlogo:hover::after{
+        transform: translate(55px, 0);
+    }
+    .navbox2 .p1{
+        display: inline-block;
+        font-size: 28px;
+        color: #424242;
+        margin-left: 15px;
+    }
+    .navbox2 .p2{
+        display: inline-block;
+        color: #757575;
+        font-size: 12px;
+    }
+
+    .navbox3{
+        /* background-color: aqua; */
+        position: absolute;
+        right: 0;
+    }
+    
+    .usernamediv{
+        display: inline-block;
+    }
+    .usernamediv .username{
+        font-size: 12px;
+        color: #757575;
+    }
+    .usernamediv .username:hover{
+        color: #ff6700;
+    }
+    .usernamediv .username span{
+        font-size: 18px;
+        /* background-color: #ff6700; */
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
+
+    .navbox3 .usernamediv .navbox3Ul{
+        display: none;
+    }
+    .navbox3 .navbox3Span{
+        display: inline-block;
+        padding: 0 5px;
+        font-size: 12px;
+        color: #757575;
+        border-left: 1px solid #d3d3d3;
+    }
+/* 产品购物车内容列表 */
+    article{
+        padding: 38px 0;
+        background-color: #f5f5f5;
+    }
+
+    .buylist{
+        width: 1226px;
+        margin: 0 auto;
+    }
+
+    .repeatbuylist{
+        width: 1226px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .repeatbuylist .p1{
+        color: #757575;
+        font-size: 30px;
+        display: inline-block;
+        height: 100px;
+        line-height: 100px;
+    }
+    .repeatbuylist .product{
+        height: 580px;
+        /* background-color: #424242; */
+    }
+    .productul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productul li{
+        width: 234px;
+        height: 280px;
+        background-color: white;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        flex-shrink: 0;
+    }
+    .productul li:hover .joincart{
+        display: block;
+    }
+    .productul li img{
+        width: 120px;
+        padding: 40px 0 15px;
+    }
+    .productul li .goodsp1{
+        font-size: 14px;
+        color: #333333;
+    }
+    .productul li .goodsp2{
+        font-size: 14px;
+        color: #ff6700;
+        margin: 5px 0;
+    }
+    .productul li .goodsp3{
+        font-size: 14px;
+        color: #757575;
+        margin-top: 5px;
+    }
+    .productul li .joincart{
+        position: relative;
+        top: -16px;
+        left: 65px;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px;
+        width: 100px;
+        background-color: #ff6700;
+        color: white;
+        display: none;
+        cursor: pointer;
+        /* margin-top: 0; */
+    }
+
+
+/* 列表处 */
+    .listhead{
+        height: 70px;
+        background-color: white;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .checkall,.check{
+        float: left;
+        position: relative;
+        top: 25px;
+        margin:0 15px 0 24px;
+        border: 1px solid #e0e0e0;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        vertical-align: center;
+    }
+    
+    .listhead p,.itembox p{
+        display: inline-block;
+        color: #424242;
+        font-size: 14px;
+        line-height: 70px;
+        /* background-color: teal; */
+    }
+    .listhead .p1,.itembox .p1{
+        width: 200px;
+    }
+    .listhead .p2,.itembox .p2{
+        width: 380px;
+    }
+    .listhead .p3,.itembox .p3{
+        width: 158px;
+    }
+    .listhead .p4,.itembox .p4{
+        text-align: center;
+        width: 130px;
+        margin-right: 20px;
+    }
+    .listhead .p5,.itembox .p5{
+        text-align: center;
+        width: 120px;
+    }
+    .listhead .p6,.itembox .p6{
+        text-align: center;
+        width: 80px;
+    }
+
+    .itembox .p1 img{
+        margin-left: 30px;
+    }
+
+    .itembox .p2{
+        position: relative;
+        bottom: 30px;
+        font-size: 18px;
+        color: #424242;
+        /* background-color: #ff6700; */
+
+    }
+    .itembox .p3,.itembox .p4,.itembox .p5,.itembox .p6{
+        position: relative;
+        bottom: 30px;
+        font-size: 16px;
+        color: #424242;
+    }
+    .itembox .p4{
+        height: 38px;
+        border: 1px solid #e0e0e0;
+        line-height: 38px;
+        width: 130px;
+        margin-right: 20px;
+    }
+    .itembox .p5{
+        color: #ff6700;
+    }
+    
+    .itembox .p4 .num_minus,.itembox .p4 .num_plus{
+        /* display: inline-block; */
+        width: 38px;
+        height: 37px;
+        line-height: 37px;
+        text-align: center;
+        font-size: 16px;
+        /* color: #424242; */
+        background-color: white;
+        border: none;
+    }
+    .itembox .p4 .num_minus:hover,.itembox .p4 .num_plus:hover{
+        background-color: #e0e0e0;
+    }
+    .itembox .p4 span{
+        display: inline-block;
+        width: 54px;
+        text-align: center;
+        height: 38px;
+        line-height: 38px;        
+    }
+    .itembox .p4 span .spannum{
+        border: none;
+        width: 54px;
+        height: 30px;
+        text-align: center;
+    }
+    .itembox .p6 span{
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .itembox .p6 span:hover{
+        color: white;
+        background-color: #ff6700;
+    }
+    .itembox{
+        height: 85px;
+        padding: 15px 26px 15px 0;
+        background-color: white;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .cartsum{
+        margin-top: 20px;
+        height: 50px;
+        line-height: 50px;
+        background-color: white;
+        color: #757575;
+        position: relative;
+    }
+    .cartsum p{
+        display: inline-block;
+    }
+    .cartsum .continue{
+        margin-left: 25px;
+        color: #757575;
+    }
+    .cartsum .continue:hover{
+        color: #ff6700;
+    }
+    .cartsum .p2{
+        margin-left: 15px;
+    }
+    .cartsum .p2 span{
+        color: #ff6700;
+    }
+    .cartsum .p3{
+        position: absolute;
+        right: 250px;
+        color: #ff6700;
+    }
+    .cartsum .p3 span{
+        font-size: 30px;
+    }
+    .cartsum .p4{
+        position: absolute;
+        right: 0;
+        width: 200px;
+        background-color:#e0e0e0;
+        color: #b0b0b0;
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+
+/* 遮罩层 */
+.mask{
+	position: fixed;
+	top: 0;
+    /* left: 0; */
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+	/* height: 1000px; */
+	background-color: rgba(101, 101, 101, 0.5);
+    z-index: 9999;
+    display: none;
+}
+.mask-container{
+	position: relative;
+	width: 500px;
+	height: 270px;
+	margin: 160px auto 0 auto;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 5px;
+}
+.mask-content{
+	padding: 60px 40px;
+}
+.mask-container .title{
+	font-size: 27px;
+    font-weight: 400;
+    line-height: 50px;
+	color: #424242;
+	min-height: 130px;
+}
+.mask-container .close-popup{
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 25px;
+	height: 25px;
+	background: url(../img/del-icon.png) center center no-repeat;
+	background-size: 25px 25px;
+	cursor: pointer;
+}
+.mask-container .close-popup:hover{
+	background: url(../img/del-hover.png) center center no-repeat;
+	background-size: 25px 25px;
+} 
+.mask-container .btn{
+	display: inline-block;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    background: #b0b0b0;
+    color: #fff;
+    font-size: 16px;
+}
+.mask-container .btn.popup-true{
+	margin-left: 15px;
+	background: #ff6700;
+    border-color: #ff6700;
+    cursor: pointer;
+}
+.mask-container .btn.popup-false:hover{
+    background-color: #757575;
+    border-color: #757575;
+}
+.mask-container .btn.popup-true:hover{
+	background-color: #f25807;
+	border-color:#f25807;
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的购物车-小米商城</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/main-footer.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body style="height: 100%;">
+    <!-- 我的购物车header部分 -->
+    <header>
+        <nav>
+            <div class="navbox1">
+                <div class="navlogo"></div>
+            </div>
+            <div class="navbox2">
+                <p class="p1">我的购物车</p>
+                <p class="p2">温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+            </div>
+            <div class="navbox3">
+                <div class="usernamediv">
+                    <a href="" class="username iconfont">用户名<span>&#xe613;</span></a>
+                    <ul class="navbox3Ul">
+                        <li><a href="">个人中心</a></li>
+                        <li><a href="">评价晒单</a></li>
+                        <li><a href="">我的喜欢</a></li>
+                        <li><a href="">小米账号</a></li>
+                        <li><a href="">退出登录</a></li>
+                    </ul>
+                </div>
+                <span class="navbox3Span">我的订单</span>
+            </div>
+        </nav>
+    </header>
+    <!-- 产品购物车内容列表 -->
+    <article>
+        <div class="buylist">
+            <input type="checkbox" name="" id="" class="checkall">
+            <div class="listhead">
+                <p class="p1">全选</p>
+                <p class="p2">商品名称</p>
+                <p class="p3">单价</p>
+                <p class="p4">数量</p>
+                <p class="p5">小计</p>
+                <p class="p6">操作</p>
+            </div>
+            <div class="itembox iconfont">
+                <input type="checkbox" name="" id="" class="check">
+                <p class="p1"><img src="img/cart1.jpg" alt=""></p>
+                <p class="p2">手机USB micro 数据线 白色</p>
+                <p class="p3"><span>9.9</span>元</p>
+                <p class="p4">
+                    <button class="num_minus" style="outline: 0;">-</button><span><input type="text"  value="1" class="spannum" style="outline: 0;" ></span><button class="num_plus" style="outline: 0;">+</button>
+                </p>
+                <p class="p5">9.9</p>
+                <p class="p6"><span>&#xe72d;</span></p>
+            </div>
+            <div class="itembox iconfont">
+                <input type="checkbox" name="" id="" class="check">
+                <p class="p1"><img src="img/cart2.jpg" alt=""></p>
+                <p class="p2">小米 | 小爱老师 | 4G网络尊享版 白色</p>
+                <p class="p3"><span>859</span>元</p>
+                <p class="p4">
+                    <button class="num_minus" style="outline: 0;">-</button><span><input type="text"  value="1" class="spannum" style="outline: 0;"></span><button class="num_plus" style="outline: 0;">+</button>
+                </p>
+                <p class="p5">859</p>
+                <p class="p6"><span>&#xe72d;</span></p>
+            </div>
+            <div class="itembox iconfont">
+                <input type="checkbox" name="" id="" class="check">
+                <p class="p1"><img src="img/cart3.jpg" alt=""></p>
+                <p class="p2">小米小背包 浅粉色 10L</p>
+                <p class="p3"><span>29</span>元</p>
+                <p class="p4">
+                    <button class="num_minus" style="outline: 0;">-</button><span><input type="text"  value="1" class="spannum" style="outline: 0;"></span><button class="num_plus" style="outline: 0;">+</button>
+                </p>
+                <p class="p5">29</p>
+                <p class="p6"><span>&#xe72d;</span></p>
+            </div>
+            <div class="cartsum">
+                <p><a href="" class="continue">继续购物</a></p>
+                <p class="p2">共<span class="numbersum">0</span>件商品，已选择<span class="number">0</span>件</p>
+                <p class="p3">合计：<span class="sumall">0</span>元</p>
+                <p class="p4">去结算</p>
+            </div>
+        </div>
+
+        <div class="repeatbuylist">
+            <h3 class="p1">买购物车中商品的人还买了</h3>
+            <div class="product">
+                <ul class="productul">
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <p class="goodsp1">MIJOY 抽纸青春版</p> 
+                        <p class="goodsp2">27.9元</p>
+                        <p class="goodsp3">13.8万人好评</p>
+                        <div class="joincart">
+                            加入购物车
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </article>
+    <!-- 第四部分：footer部分 -->
+    <footer>
+        <div class="service">
+            <div class="first iconfont">
+                <a href=""><span>&#xe61d;</span> 预约维修服务</a>
+                <a href=""><span>&#xe61d;</span> 7天无理由退货</a>
+                <a href=""><span>&#xe61d;</span> 15天免费换货</a>
+                <a href=""><span>&#xe61d;</span> 满99元包邮</a>
+                <a href="" class="lastservice"><span>&#xe61d;</span> 520余家售后网点</a>
+            </div>
+            <div class="second">
+                <div class="servicelist">
+                    <p>帮助中心</p>
+                    <a href="">账户管理</a>
+                    <a href="">购物指南</a>
+                    <a href="">订单操作</a>
+                </div>
+                <div class="servicelist">
+                    <p>服务支持</p>
+                    <a href="">售后政策</a>
+                    <a href="">自助服务</a>
+                    <a href="">相关下载</a>
+                </div>
+                <div class="servicelist">
+                    <p>线下门店</p>
+                    <a href="">小米之家</a>
+                    <a href="">服务网点</a>
+                    <a href="">授权体验店</a>
+                </div>
+                <div class="servicelist">
+                    <p>关于小米</p>
+                    <a href="">了解小米</a>
+                    <a href="">加入小米</a>
+                    <a href="">投资者关系</a>
+                    <a href="">廉洁举报</a>
+                </div>
+                <div class="servicelist">
+                    <p>关注我们</p>
+                    <a href="">新浪微博</a>
+                    <a href="">官方微信</a>
+                    <a href="">联系我们</a>
+                    <a href="">公益基金会</a>
+                </div>
+                <div class="servicelist">
+                    <p>特色服务</p>
+                    <a href="">F 码通道</a>
+                    <a href="">礼物码</a>
+                    <a href="">防伪查询</a>
+                </div>
+                <div class="servicelist-last">
+                    <p class="p1">400-100-5678</p>
+                    <p class="p2">8:00-18:00（仅收市话费）</p>
+                    <a href="" class="p3">人工客服</a>
+                    <p class="p4">关注小米：</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="backcolor">
+            <div class="friendlink">
+                <span class="logo"></span>
+                <div class="text">
+                    <a href="" class="color1">小米商城 </a>|
+                    <a href="" class="color1">MIUI </a>|
+                    <a href="" class="color1">米家 </a>|
+                    <a href="" class="color1">米聊 </a>|
+                    <a href="" class="color1">多看 </a>|
+                    <a href="" class="color1">游戏 </a>|
+                    <a href="" class="color1">政企服务 </a>|
+                    <a href="" class="color1">小米天猫店 </a>|
+                    <a href="" class="color1">小米集团隐私政策 </a>|
+                    <a href="" class="color1">小米公司儿童信息保护规则 </a>|
+                    <a href="" class="color1">小米商城隐私政策 </a>|
+                    <a href="" class="color1">小米商城用户协议 </a>|
+                    <a href="" class="color1">问题反馈 </a>|
+                    <a href="" class="color1">Select Location </a><br>
+                    &copy;<a href="" class="color2">mi.com</a>京ICP证110507号
+                    <a href="" class="color2">京ICP备10046444号</a>
+                    <a href="" class="color2">京公网安备11010802020134号</a>
+                    <a href="" class="color2">京网文[2020]0276-042号</a><br>
+
+                    <a href="" class="color2">（京）网械平台备字（2018）第00005号</a>
+                    <a href="" class="color2">互联网药品信息服务资格证 (京)-非经营性-2014-0090</a>
+                    <a href="" class="color2">营业执照</a>
+                    <a href="" class="color2">医疗器械质量公告</a><br>
+
+                    <a href="" class="color2">增值电信业务许可证</a>网络食品经营备案（京）【2018】WLSPJYBAHF-12
+                    <a href="" class="color2">食品经营许可证</a><br>
+
+                    违法和不良信息举报电话：185-0130-1238
+                    <a href="" class="color2">知识产权侵权投诉</a>
+                    本网站所列数据，除特殊说明，所有数据均出自我司实验室测试<br>
+
+                    <a href=""><img src="img/friendlink1.png" alt=""></a>
+                    <a href=""><img src="img/friendlink2.png" alt=""></a>
+                    <a href=""><img src="img/friendlink3.png" alt=""></a>
+                    <a href=""><img src="img/friendlink4.png" alt=""></a>
+                </div>
+            </div>
+            <p>让全球每个人都能享受科技带来的美好生活</p>
+        </div>
+    </footer>
+    <!-- 遮罩层 -->
+    <div class="mask">
+		<div class="mask-container">
+			<div class="mask-content">
+				<h2 class="title">确定删除吗？</h2>
+				<a class="close-popup"></a>
+				<div class="mask-controls">
+					<a class="popup-false btn">取消</a>
+					<a class="popup-true btn">确定</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- 部分js -->
+    <script>
+        // 小米图标的点击事件
+        let navlogo = document.querySelector('.navlogo');
+        navlogo.onclick =function(){
+            location.href ='index.html';
+        }
+    </script>
+    <!-- 其他js -->
+    <script src="js/cart2.js"></script>
+</body>
+</html>
